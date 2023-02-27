@@ -1,0 +1,128 @@
+:root {
+  --defaultcolor: #f8f8f8;
+  --defaultfontsize: 21px;
+  --fontweight-default: 500;
+  --box-shadow-default: 0 3px 5px -5px rgb(0, 0, 0, 0.6);
+}
+
+body {
+  background-color: var(--defaultcolor);
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 600px) {
+  .form {
+    display: flex;
+    flex-flow: row wrap;
+  }
+}
+
+/* image-sidebar */
+.img {
+  background: url(photo.avif);
+  background-size: cover;
+  width: 67vw;
+  height: 100vh;
+  z-index: -1;
+}
+
+.imgsrc {
+  font-size: 10px;
+  padding-top: 3vh;
+}
+
+.title {
+  background-color: rgba(0, 0, 0, 0.527);
+  color: #ffff;
+  width: 100%;
+  padding: 2vh 0;
+  margin: 6vh 0;
+}
+
+div.title p {
+  text-align: center;
+}
+
+.titleText {
+  font-size: 28px;
+}
+
+/* Form section */
+div.text {
+  margin: 7vh 6vw 0;
+  font-weight: var(--fontweight-default);
+  font-size: var(--defaultfontsize);
+}
+
+form > .wrapper {
+  padding: 0 105px 35px;
+  background-color: #ffff;
+  box-shadow: 0 1px 12px 1px rgb(198 191 191/60%);
+}
+
+label {
+  font-size: var(--defaultfontsize);
+}
+
+div.wrapper > p {
+  padding: 20px 0;
+  font-weight: var(--fontweight-default);
+  font-size: var(--defaultfontsize);
+  display: flex;
+  flex-flow: row wrap;
+}
+
+input.sbmt {
+  width: 210px;
+  height: 4rem;
+  font-size: 18px;
+  border: none;
+  border-radius: 12px;
+  color: #ffff;
+  background-color: #333;
+}
+
+input.sbmt:active {
+  transform: translateY(1.2px);
+}
+
+input.form_input {
+  padding: 10px;
+  width: 300px;
+  font-size: var(--defaultfontsize);
+  border-radius: 5px;
+  border: 1.9px solid rgb(198, 191, 191);
+  box-shadow: 0 3px 5px -5px rgb(0, 0, 0, 0.6);
+}
+
+input:focus {
+  border: 1.9px rgb(51 51 51);
+  box-shadow: var(--box-shadow-default);
+}
+
+input.form_input:valid {
+  border: 2.5px solid green;
+  box-shadow: var(--box-shadow-default);
+}
+
+div.box {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 8px;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 40px;
+}
+
+.signUp {
+  padding: 21px 105px;
+}
