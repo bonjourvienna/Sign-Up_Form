@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Sign-Up Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="img">
+        <div class="title">
+          <p class="titleText">IG|vienna.codes</p>
+          <p class="imgsrc">Photo by Josip Ivankovic on Unsplash</p>
+        </div>
+      </div>
+      <div class="content">
+        <div class="text">
+          <p>
+            This is not real online service! You know you need something like
+            this in your life to help you realize your deepest dreams. Sign up
+            now to get started
+          </p>
+          <p>You know you want to.</p>
+        </div>
+        <form action="#" method="get">
+          <div class="wrapper">
+            <p>Let's do this!</p>
+            <div class="form">
+              <div class="fname box">
+                <label for="fname">FIRST NAME</label>
+                <input
+                  type="text"
+                  name="fname"
+                  class="form_input"
+                  id="fname"
+                  placeholder="John"
+                  required
+                />
+              </div>
+              <div class="lname box">
+                <label for="">LAST NAME</label>
+                <input
+                  type="text"
+                  name="lname"
+                  class="form_input"
+                  id="lname"
+                  placeholder="Doe"
+                  required
+                />
+              </div>
+              <div class="email box">
+                <label for="">EMAIL</label>
+                <input
+                  type="email"
+                  name="user_email"
+                  class="form_input"
+                  id="user_email"
+                  placeholder="johndoe@company.com"
+                  required
+                />
+              </div>
+              <div class="phone_num box">
+                <label for="">PHONE NUMBER</label>
+                <input
+                  type="tel"
+                  name="phone_num"
+                  class="form_input"
+                  id="phone_num"
+                  placeholder="+62x-xxxx-xxxx"
+                  pattern="\+62\d{9,12}$"
+                  required
+                />
+              </div>
+              <div class="pw box">
+                <label for="">PASSWORD</label>
+                <input
+                  type="password"
+                  name="user_pw"
+                  class="form_input"
+                  id="user_pw"
+                  minlength="4"
+                  required
+                />
+              </div>
+              <div class="confirm_pw box">
+                <label for="">CONFIRM PASSWORD</label>
+                <input type="password" class="form_input" required />
+              </div>
+            </div>
+          </div>
+          <div class="signUp">
+            <input type="submit" class="sbmt" value="Create Account" />
+            <p>Already have an account? <a href="#">Log in</a></p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
